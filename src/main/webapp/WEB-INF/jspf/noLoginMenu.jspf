@@ -1,0 +1,9 @@
+<div id="nav">
+<ul>
+    <li><a href="register">Register</a></li>
+    <li><a href="home">Home</a></li>
+    <li><a href="login">Login</a>
+    <li><a href="register">Register as User</a></li>
+    <li><a href="bussReg">Register as Business</a></li>
+</ul>
+</div>
