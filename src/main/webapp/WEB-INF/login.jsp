@@ -13,7 +13,7 @@
             </div>
             <%@include file="jspf/noLoginMenu.jspf" %>
             <div id="content">
-                ${flash}
+                <div class="flash">${flash}</div>
                 <table>
                 <form method="post" action="login">
                     <tr><td>Username: </td><td><input type="text" name="username"></td><td></td></tr>

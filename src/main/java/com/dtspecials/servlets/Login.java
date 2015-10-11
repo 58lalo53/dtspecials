@@ -11,6 +11,7 @@ import com.dtspecials.mavendtspecials.User;
 import java.io.IOException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -74,6 +75,9 @@ public class Login extends HttpServlet {
             
             response.sendRedirect("home");
             
+        }catch(NoResultException nre){
+            request.setAttribute("flash", "Username and Password do not match");
+            request.getRequestDispatcher(destination).forward(request, response);
         }catch(Exception e){
             request.setAttribute("flash", e.getMessage());
             request.getRequestDispatcher(destination).forward(request, response);

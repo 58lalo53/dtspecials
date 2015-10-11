@@ -11,6 +11,12 @@ html, body {
     height: 100%;
 }
 
+.flash {
+    color: red;
+    font-size: 90%;
+    font-style: italic;
+}
+
 #nav {
     list-style-type: none;
     background-color: #000000;
@@ -87,4 +93,15 @@ html, body {
 #nav li:hover > a {
     background-color: #545554;
     color: #FFFFFF;
+}
+
+a:link {
+    color:#55aff5;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0  #000, 1px 1px 0 #000;
+}
+
+a:hover {
+    color: #ff9999;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0  #000, 1px 1px 0 #000;
 }

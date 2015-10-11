@@ -1,17 +1,18 @@
-<%-- 
-    Document   : clubs
-    Created on : Jul 6, 2015, 1:02:52 PM
-    Author     : root
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css" />
+        <title>Clubs</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="wrapper">
+            <div id="header"><h1>Clubs</h1></div>
+            <%@include file="jspf/loginMenu.jspf" %>
+            <div id="content">
+                
+            </div>
+        </div>
     </body>
 </html>
