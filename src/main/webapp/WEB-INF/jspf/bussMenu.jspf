@@ -2,6 +2,7 @@
     <ul>
         <li><a href="home">Home</a></li>
         <li><a href="addSpecial">Add Specials</a></li>
-        <li><a href="viewSpecial">View Specials</a></li>
+        <li><a href="editBussProfile">View/Edit BusiProfile</a></li>
+        <li><a href="viewReviews">View Customer Reviews</a></li>
     </ul>
 </div>

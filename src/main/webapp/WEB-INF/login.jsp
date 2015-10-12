@@ -15,13 +15,13 @@
             <div id="content">
                 <div class="flash">${flash}</div>
                 <table>
-                <form method="post" action="login">
+                <form method="post" action="ulogin">
                     <tr><td>Username: </td><td><input type="text" name="username"></td><td></td></tr>
                     <tr><td>Password: </td><td><input type="password" name="password"></td><td></td></tr>
                     <tr><td></td><td><input type="submit" value="Login"></td></tr>  
                 </form>
                 </table>
-                <a href="forgot">Forgot Password</a> | <a href="register">Register as Customer</a> | <a href="bussReg">Register Business</a>
+                <a href="forgot">Forgot Password</a> | <a href="register">Register as Customer</a>
             </div>
         </div>
     </body>

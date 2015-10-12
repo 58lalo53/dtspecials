@@ -50,24 +50,13 @@ public class BussReg extends HttpServlet {
         
         Get get = new Get(destination, request, response);
         
-        String bname = request.getParameter("bname");
-        String street = request.getParameter("street");
-        String city = request.getParameter("city");
-        String state = request.getParameter("state");
-        String zip = request.getParameter("zip");
-        String phone = request.getParameter("phone");
+        
         String email = request.getParameter("email");
-        String description = request.getParameter("description");
-            if(description.equals("null"))
-                description = "";
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String password2 = request.getParameter("password2");
-        Business buss;
-        if(!description.equals(""))
-            buss = new Business(bname, street, city, state, zip, phone, email, description, username, password);
-        else
-            buss = new Business(bname, street, city, state, zip, phone, email, username, password);
+    
+        Business buss = new Business(username, password, email);
         
         if(!password.equals(password2)){
             request.setAttribute("flash", "Password does not match");
